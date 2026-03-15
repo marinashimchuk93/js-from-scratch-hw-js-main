@@ -19,4 +19,13 @@ let isAccess;
 
 // your code
 
+isAccess =
+  (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
 
+if (isAccess) {
+  console.log("Доступ разрешен.");
+} else {
+  console.log(
+    "Доступ запрещен: необходимы права администратора или подтвержденный статус.",
+  );
+}
