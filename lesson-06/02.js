@@ -26,7 +26,7 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 */
 
 
-
+ 
 
 // Используя цикл for:
 // function map(array, callback) {
