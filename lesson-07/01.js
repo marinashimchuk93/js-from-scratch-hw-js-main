@@ -31,7 +31,7 @@ function updateImage() {
   imageElement.src = WEB_TECH_IMAGES[currentIndex];
 }
 
-buttonElementPrev.addEventListener("click", () => {
+buttonElementNext.addEventListener("click", () => {
   currentIndex++;
   if (currentIndex >= WEB_TECH_IMAGES.length) {
     currentIndex = 0; // Переход к первой картинке
@@ -39,7 +39,7 @@ buttonElementPrev.addEventListener("click", () => {
   updateImage();
 });
 
-buttonElementNext.addEventListener("click", () => {
+buttonElementPrev.addEventListener("click", () => {
   currentIndex--;
   if (currentIndex < 0) {
     currentIndex = WEB_TECH_IMAGES.length - 1; // Переход к последней картинке
